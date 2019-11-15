@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af0b936c-54a1-4adb-8afb-e7de7218a68a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/coderslab/warszataty11/gra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/coderslab/warszataty11/kostka/kostka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/coderslab/warszataty11/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/warsztaty11/pl/coderslab/warszataty11/gra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/coderslab/warszataty11/gra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/coderslab/warszataty11/zgaduj/gra.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -56,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.gra">
+  <component name="RunManager" selected="Application.kostka">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="pl.coderslab.warszataty11.Main" />
       <module name="warsztaty11" />
@@ -68,11 +72,24 @@
       </method>
     </configuration>
     <configuration name="gra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.coderslab.warszataty11.gra" />
+      <option name="MAIN_CLASS_NAME" value="pl.coderslab.warszataty11.zgaduj.gra" />
       <module name="warsztaty11" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.coderslab.warszataty11.*" />
+          <option name="PATTERN" value="pl.coderslab.warszataty11.zgaduj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kostka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.coderslab.warszataty11.kostka.kostka" />
+      <module name="warsztaty11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.coderslab.warszataty11.kostka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,9 +100,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.gra" />
+      <item itemvalue="Application.kostka" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.kostka" />
         <item itemvalue="Application.gra" />
         <item itemvalue="Application.Main" />
       </list>
@@ -101,7 +120,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573298284321</updated>
-      <workItem from="1573298288827" duration="2530000" />
+      <workItem from="1573298288827" duration="8060000" />
+      <workItem from="1573373076388" duration="56000" />
+      <workItem from="1573845550984" duration="672000" />
     </task>
     <servers />
   </component>
@@ -113,7 +134,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

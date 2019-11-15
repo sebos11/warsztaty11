@@ -1,4 +1,4 @@
-package pl.coderslab.warszataty11;
+package pl.coderslab.warszataty11.zgaduj;
 
 import java.util.Random;
 import java.util.Scanner;
