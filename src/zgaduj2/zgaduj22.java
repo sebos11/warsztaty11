@@ -52,8 +52,10 @@ public class zgaduj22 {
             }
 
             if (count > 10){
-                System.out.println("OSZUKAŁEŚ");
-                win = true;
+                System.out.println("NIE OSZUKUJ!!!");
+                count = 1;
+                min = 0;
+                max = 1000;
             }
             System.out.println("MIN = " + min + " MAX = " + max);
         }
