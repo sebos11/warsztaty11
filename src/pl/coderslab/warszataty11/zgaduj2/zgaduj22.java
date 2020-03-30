@@ -1,4 +1,4 @@
-package zgaduj2;
+package pl.coderslab.warszataty11.zgaduj2;
 
 
 import java.util.Scanner;
@@ -16,23 +16,18 @@ public class zgaduj22 {
         System.out.println("a ja ją zgadnę w max. 10 próbach.");
 
         while (!win) {
-
             guess = (int) (((max - min) / 2) + min);
             System.out.println("Próba nr " + count+ " Zgaduję: " + guess);
             System.out.println("Wciśnij: 1 - jeśli za dużo");
             System.out.println("Wciśnij: 2 - jeśli za mało");
             System.out.println("Wciśnij: 3 - jeśli zgadłem");
 
-
             int userAnswer = scanner.nextInt();
-
 
             switch (userAnswer) {
                 case 1: {
                     max = guess;
                     count++;
-
-
                     break;
                 }
                 case 2: {
@@ -46,9 +41,7 @@ public class zgaduj22 {
                     break;
                 default: {
                     System.out.println("Wybierz właściwą liczbę");
-
                 }
-
             }
 
             if (count > 10){
