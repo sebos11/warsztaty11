@@ -93,7 +93,7 @@ public static boolean isOmittedChar(char c,char[] omittedChar){
         return false;
 }
 public static String ommitsCharInString(String s){
-    char[] omittedChar ={',','.','?',':',';','!','-','"','#'};
+    char[] omittedChar ={',','.','?',':',';','!','-','"','#','\''};
         StringBuilder temp = new StringBuilder();
         for (int i = 0; i<s.length();i++){
             if (!isOmittedChar(s.charAt(i),omittedChar)) {
