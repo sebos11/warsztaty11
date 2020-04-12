@@ -12,12 +12,13 @@ public class lotto {
         boolean powtorka = false;
         Integer[] userArr = new Integer[6];
         Integer[] arr = new Integer[49];
-        Integer[] arrRandom = new Integer[49];
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
         }
+
         Collections.shuffle(Arrays.asList(arr));
+
         System.out.println("LOTTO - ");
         System.out.println("Podaj 6 liczb z zakresu od 1 do 49: ");
         Scanner scan = new Scanner(System.in);

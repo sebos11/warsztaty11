@@ -13,16 +13,14 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class tester {
+public class searchPopularWords {
     public static void main(String[] args) {
-        String[] omittedWords = {"już","tylko","przez","USA","JEGO","TWÓJ","tak","jak","pod","czy","raz","oraz","oto","nie","ponieważ","lecz","może","być","sam","się","lub","dla","ws."};
+        String[] omittedWords = {"już","tylko","przez","JEGO","TWÓJ","tak","jak","pod","czy","raz","oraz","oto","nie","ponieważ","lecz","może","być","sam","się","lub","dla","ws."};
 
         Path path1 = Paths.get("popular_words.txt");
         Path path2 = Paths.get("filtered_popular_words.txt");
         List<String> lines = new ArrayList<>();
         List<String> outList = new ArrayList<>();
-
-
 
         Connection connect = Jsoup.connect("http://www.onet.pl/");
         try {
@@ -30,7 +28,6 @@ public class tester {
             Elements links = document.select("span.title");
             for (Element elem : links) {
                 lines.add(elem.text());
-
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -41,7 +38,7 @@ public class tester {
             System.out.println("Nie można zapisać pliku.");
         }
 
-        System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
 
         try {
             for (String line : Files.readAllLines(path1)) {
@@ -92,6 +89,7 @@ public static boolean isOmittedChar(char c,char[] omittedChar){
         }
         return false;
 }
+
 public static String ommitsCharInString(String s){
     char[] omittedChar ={',','.','?',':',';','!','-','"','#','\''};
         StringBuilder temp = new StringBuilder();
@@ -102,10 +100,5 @@ public static String ommitsCharInString(String s){
         }
     return temp.toString();
 }
+
 }
-   /* Wywołaj pobieranie dla wybranych serwisów internetowych.
-        Pomiń wszystkie elementy krótsze niż 3-znakowe.
-        Utwórz tablicę elementów wykluczonych np. oraz, ponieważ
-        Wczytaj utworzony plik popular_words.txt i na jego podstawie utwórz plik
-        filtered_popular_words.txt, który zawierać będzie wszystkie znalezione słowa,
-        pomijając słowa wykluczone.*/
